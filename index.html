@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- AQUI -->
+  <title>Frutos de Goiás - Bom Jesus</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>🍦 Frutos de Goiás</h1>
+  <p>Os melhores sorvetes de Bom Jesus</p>
+</header>
+
+<div class="container">
+
+  <div class="card">
+    <h2>Sobre nós</h2>
+    <p>Trabalhamos com sorvetes naturais, cremosos e cheios de sabor. Um lugar perfeito para você e sua família!</p>
+  </div>
+
+  <div class="card">
+    <h2>Horário de funcionamento</h2>
+    <p>🕛 Todos os dias das 12:00 às 22:00</p>
+  </div>
+
+  <div class="card">
+    <h2>Endereço</h2>
+    <p>📍 Rua José Parente, Centro - Bom Jesus PI</p>
+  </div>
+
+  <div class="card">
+    <h2>Peça agora</h2>
+    <a class="btn" href="https://instagram.com/frutosdegoias.bomjesus" target="_blank">
+      📸 Ver no Instagram
+    </a>
+  </div>
+
+  <div class="card">
+    <h2>Galeria</h2>
+    <div class="galeria">
+
+      <video controls>
+        <source src="vídeo1.mp4" type="video/mp4">
+      </video>
+
+      <img src="foto1.jpg" onclick="abrirModal(this.src)">
+      <img src="foto2.jpg" onclick="abrirModal(this.src)">
+
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Localização</h2>
+    <iframe 
+      src="https://www.google.com/maps?q=Frutos+de+Goias+Bom+Jesus+PI&output=embed"
+      width="100%" height="300" style="border:0;">
+    </iframe>
+  </div>
+
+</div>
+
+<footer>
+  <p>© 2026 Frutos de Goiás - Bom Jesus</p>
+</footer>
+<div id="modal" class="modal">
+  <span class="fechar" onclick="fecharModal()">&times;</span>
+  <img id="imagemModal">
+</div>
+  <script src="script.js"></script>
+</body>
+</html>
